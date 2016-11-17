@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!-- 2 https://dwestgate.github.io/JourneysTesting/ -->
 <html>
 	<head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,8 +15,7 @@
 				var branchBanner = document.getElementById('branch-banner-iframe')
 				document.body.removeChild(branchBanner)
 				console.log("setTrump - init");
-				(function(b,r,a,n,c,h,_,s,d,k){if(!b[n]||!b[n]._q){for(;s<_.length;)c(h,_[s++]);d=r.createElement(a);d.async=1;d.src="https://cdn.branch.io/branch-latest.min.js";k=r.getElementsByTagName(a)[0];k.parentNode.insertBefore(d,k);b[n]=h}})(window,document,"script","branch",function(b,r){b[r]=function(){b._q.push([r,arguments])}},{_q:[],_v:1},"addListener applyCode banner closeBanner creditHistory credits data deepview deepviewCta first getCode init link logout redeem referrals removeListener sendSMS setBranchViewData setIdentity track validateCode".split(" "), 0);
-				branch.init('key_live_gchnKkd3l3m9YBPP2d73jmfejkcgVjgM');
+				ranch.init('key_live_gchnKkd3l3m9YBPP2d73jmfejkcgVjgM');
 				console.log("setTrump - setBranchViewData");
 				branch.setBranchViewData({
   					data: {
@@ -35,7 +33,6 @@
 				var branchBanner = document.getElementById('branch-banner-iframe')
 				document.body.removeChild(branchBanner)
 				console.log("setPence - init");
-				(function(b,r,a,n,c,h,_,s,d,k){if(!b[n]||!b[n]._q){for(;s<_.length;)c(h,_[s++]);d=r.createElement(a);d.async=1;d.src="https://cdn.branch.io/branch-latest.min.js";k=r.getElementsByTagName(a)[0];k.parentNode.insertBefore(d,k);b[n]=h}})(window,document,"script","branch",function(b,r){b[r]=function(){b._q.push([r,arguments])}},{_q:[],_v:1},"addListener applyCode banner closeBanner creditHistory credits data deepview deepviewCta first getCode init link logout redeem referrals removeListener sendSMS setBranchViewData setIdentity track validateCode".split(" "), 0);
 				branch.init('key_live_gchnKkd3l3m9YBPP2d73jmfejkcgVjgM');
 				console.log("setPence - setBranchViewData");
 				branch.setBranchViewData({
@@ -53,7 +50,7 @@
 	<body>
 		<form name="radiobuttons">
     			<input type="radio" name="radioname"  value="1" onclick="setTrump()" checked/>Trump<br>
-    			<input type="radio" name="radioname"  value="2" onclick="setPence()" />Pence<br>
+    			<input type="radio" name="radioname"  value="2" onclick="setPence()" />Pence
 		</form>
 	</body>
 </html>
