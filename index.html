@@ -43,10 +43,19 @@
 			}
 		</script>
 	</head>
+	<style>
+		.container{
+    			display: flex;
+    			justify-content: center;
+    			align-items: center;
+		}
+	</style>
 	<body>
-		<form name="radiobuttons">
-    			<input type="radio" name="radioname"  value="1" onclick="setTrump()" checked/>Trump<br>
-    			<input type="radio" name="radioname"  value="2" onclick="setPence()" />Pence
-		</form>
+		<div class="container">
+			<form name="radiobuttons">
+    				<input type="radio" name="radioname"  value="1" onclick="setTrump()" checked/>Trump<br>
+    				<input type="radio" name="radioname"  value="2" onclick="setPence()" />Pence
+			</form>
+		</div>
 	</body>
 </html>
