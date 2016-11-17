@@ -13,6 +13,7 @@
 			branch.init('key_live_gchnKkd3l3m9YBPP2d73jmfejkcgVjgM');
 			
 			function setTrump() {
+				console.log("setTrump - setBranchViewData");
 				branch.setBranchViewData({
   					data: {
 						body_index: 1,
@@ -22,11 +23,13 @@
 						monster_name: 'Trump'
   					}
 				});
+				console.log("setTrump - init");
 				branch.init('key_live_gchnKkd3l3m9YBPP2d73jmfejkcgVjgM');
 
 			}
 			
 			function setPence() {
+				console.log("setPence - setBranchViewData");
 				branch.setBranchViewData({
   					data: {
 						body_index: 2,
@@ -36,6 +39,7 @@
 						monster_name: 'Pence'
   					}
 				});
+				console.log("setPence - init");
 				branch.init('key_live_gchnKkd3l3m9YBPP2d73jmfejkcgVjgM');
 			}
 		</script>
