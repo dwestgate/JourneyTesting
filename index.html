@@ -16,8 +16,7 @@
 			
 			function setDefault() {
 				var branchBanner = document.getElementById('branch-banner-iframe')
-				document.body.removeChild(branchBanner)
-				branch.init('key_live_hkDytPACtipny3N9XmnbZlapBDdj4WIL');
+				branch.closeJourney(function(err) { console.log(err); });
 				branch.setBranchViewData({
   					data: {
 						utm_campaign: "TeddyCampaign",
@@ -30,13 +29,13 @@
 						monster_name: 'Teddy'
   					}
 				});
+				branch.track('pageview');
 
 			}
 			
 			function setUpdated() {
 				var branchBanner = document.getElementById('branch-banner-iframe')
-				document.body.removeChild(branchBanner)
-				branch.init('key_live_hkDytPACtipny3N9XmnbZlapBDdj4WIL');
+				branch.closeJourney(function(err) { console.log(err); });
 				branch.setBranchViewData({
   					data: {
 						utm_campaign: "FreddyCampaign",
@@ -49,6 +48,7 @@
 						monster_name: 'Freddy'
   					}
 				});
+				branch.track('pageview');
 			}
 		</script>
 	</head>
